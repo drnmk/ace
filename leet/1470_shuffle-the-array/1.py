@@ -1,6 +1,5 @@
-# 1470. Shuffle the Array
+# https://leetcode.com/problems/shuffle-the-array/
 
-# trial 1
 class Solution:
     def shuffle(self, nums: List[int], n: int) -> List[int]:
         lst = []
