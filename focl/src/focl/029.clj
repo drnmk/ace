@@ -8,14 +8,12 @@
 ;; (empty? (__ "nothing"))
 ;; (= (__ "$#A(*&987Zf") "AZ")
 
-(def upper-cases "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-(first "abc")
+(defn f [s]
+  (clojure.string/join 
+   (filter 
+    (fn [c] (Character/isUpperCase c))
+    s)))
 
-
-(clojure.string/includes?  "abc" "b")
-
-
-
-(= (__ "HeLlO, WoRlD!") "HLOWRD")
-(empty? (__ "nothing"))
-(= (__ "$#A(*&987Zf") "AZ")
+(= (f "HeLlO, WoRlD!") "HLOWRD") ;; => true
+(empty? (f "nothing")) ;; => true
+(= (f "$#A(*&987Zf") "AZ") ;; => true
