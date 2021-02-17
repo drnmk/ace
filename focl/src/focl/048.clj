@@ -1,5 +1,3 @@
-(ns focl.048)
-
 ;; Intro to some
 ;; Difficulty:	Easy
 ;; Topics:	
